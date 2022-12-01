@@ -1,0 +1,20 @@
+ * {
+    color: black;
+    background-color: white;
+    background-image: none;
+    border:none;
+    text-shadow: none;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+footer, button, img, nav>ul>li>a:link, aside>a:link, section>a:link, aside>ul>li>a:link, aside>ul {display: none;color: black;}
+aside, h1{color:black; border: none; text-shadow: none; font-size: 12pt; padding: 0;}
+button{
+    color: black;
+    text-shadow: none;
+}
+aside{
+    margin-top: -200px;
+}

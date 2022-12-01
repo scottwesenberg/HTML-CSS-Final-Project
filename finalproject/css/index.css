@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+    /* For mobile phones: */
+
+.title{ grid-area:h; }
+.menu{ grid-area:n;}
+.content{ grid-area:m; 
+display: flex;
+flex-wrap: wrap;
+min-width: 214px;
+}
+.left{ grid-area:a; }
+.foot{ grid-area:f; }
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+.grid-container{
+	display:grid;
+	grid-template-areas:
+		'h h h'
+		'n n n'
+        'a a a'
+		'm m m'
+		'f f f';
+	grid-gap:4px;
+	padding:4px;
+    background:  black url("itachi-back.jpg") no-repeat fixed left; 
+    background-size: cover;
+}
+
+}
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+.grid-container{
+	display:grid;
+	grid-template-areas:
+		'h h h'
+		'n n n'
+        'a a a'
+        'm m m'
+		'f f f';
+	grid-gap:4px;
+	padding:5px;
+    background:  black url("itachi-back.jpg") no-repeat fixed left; 
+    background-size: cover;
+}    
+}
+
+/* For desktop: */
+@media only screen and (min-width: 800px) {
+.grid-container{
+	display:grid;
+	grid-template-areas:
+		'h h h h h h  '
+		'n m m m m m'
+        'a m m m m m'
+		'f f f f f f';
+	grid-gap:4px;
+	padding:10px;
+    background:  black url("itachi-back.jpg") no-repeat cover ;     
+    background-size: cover;
+}
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+nav>ul{
+    list-style-type: none;
+    padding: 5px 5px;
+}
+nav>ul>li{
+    padding: 5px 5px;
+}
+section{
+    display: block;
+    padding: 45px 10px;
+    color: Black;
+    flex: 1;    
+    justify-content: center;
+    border-right: 2px white solid;
+
+}
+nav>ul>li>a:link {
+    font-family: 'Courier New', Courier, monospace;
+    color: orange;
+    font-size: 1.3em;
+    font-weight: 900;
+    background: linear-gradient(to left, black, darkred);
+    opacity: 99%;
+    padding: 4px 10px;
+    border-bottom: 2px solid darkorange;
+    border-right: 2px solid darkorange;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+nav>ul>li>a:visited{
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    border-bottom: 2px solid darkorange;
+    border-right: 2px solid darkorange;
+}
+nav>ul>li>a:hover{
+    text-shadow: 5px 5px 12x black;
+    animation: hovers 2s alternate infinite;
+}
+nav{
+    text-align: justify;
+    opacity: 85%;
+}
+img{
+    height: 100%;
+    width: 100%;   
+    max-width: 214px;
+    min-width: 214px;
+    min-height: auto;
+    margin-left: 10px; 
+    padding-right: 10px;
+}
+section>a:link {
+    color: orange;
+    width: fit-content;
+    text-align: justify;
+    padding-left: 5px;
+    text-decoration: none;
+    
+}
+section> a:visited{
+    text-align: justify;
+    color: rgb(219, 219, 219);
+    height: 400px;
+}
+section>a:hover{
+    text-shadow: 3px 3px 3px black;
+}
+h2 {
+    display: block;
+    background: linear-gradient(to left, black, darkred);
+    width: 80%;
+    margin:20px;
+    border-radius: 10px;
+    opacity: 95%;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    padding: 4px;
+    padding-left: 15px;
+
+}
+aside{
+    display: block;
+    font-family: "Trirong", serif;
+    color: orange;
+    background: radial-gradient(black,black, darkred);
+    border-radius: 10px;
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 30px 20px;
+    padding-bottom: 40px;
+    height: fit-content;
+    opacity: 95%;
+    border-bottom: 4px solid orangered;
+    border-right: 4px solid orangered;
+}
+aside>p>a:link {
+    color: orange;
+    text-align: justify;
+    padding-left: 5px;
+    text-decoration: underline orangered 2px;
+}
+aside>p>a:visited{
+    color: white;
+}
+h1 {
+    background: linear-gradient(to left, black, darkred);
+    text-shadow: 4px 4px 3px black;
+    color: orange;
+    width: 97%;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom: 4px solid orangered;
+    border-right: 4px solid orangered;
+    opacity: 90%;
+
+}
+article{
+    margin-bottom: 40px;
+}
+button{
+    background-color: darkred;
+    font-weight: 600;
+    color: orange;
+    text-shadow: 2px 2px 1px black;
+    font-size: large;
+    border-radius: 10px;
+}
+aside>a:link{
+    color: white;
+    text-decoration: underline 2px white;
+
+}
+aside>a:visited{
+    color: orange;
+    text-decoration:underline 2px white ;
+}
+ul{
+    width: 150%;
+}
+button:hover{
+    font-size: larger;
+}
+@keyframes hovers {
+    from {font-size: 1.3em;}
+    to {font-size: 1.5em;}
+}
+.icon-bar {
+    width: 97%; /* Full-width */
+    background: linear-gradient(to right, darkred, black);
+    overflow: auto; /* Overflow due to float */
+    padding: 10px;
+    text-align: center;
+    float:inline-end;
+    margin-right: 0px;
+    margin-top: 15px;
+    border-radius: 15px;
+    bottom: 0px;
+    position: sticky;
+    margin-left: 20px;
+}
+
+.icon-bar a {
+    float: left; 
+    text-align: center; 
+    width: 24%; 
+    padding: 10px 0; 
+    color: orange;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: rgb(190, 105, 0); /* Add a hover color */
+}
+aside>ul>li>a:link{
+    list-style-type:circle;
+    line-height: 1.2;
+    color: white;
+    text-decoration: underline 2px white;
+}
+aside>ul>li>a:hover{
+    line-height: 1.2;
+    font-size: 14px;
+}
+aside>ul>li>a:visited{
+    line-height: 1.2;
+    color: orange;
+    font-size: 14px;
+    text-decoration: underline 2px white;
+}

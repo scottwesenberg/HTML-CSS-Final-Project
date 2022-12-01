@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Naruto Shippuden">
+    <meta name="keywords" content="Naruto, Sasuke, Sakura, Kakashi, Itachi">
+    <link rel="stylesheet" href="css/index.css" media="all"/>
+    <link rel="stylesheet" href="css/print.css" media="print"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Naruto Characters</title>
+</head>
+<body class="grid-container">
+<header class="title">
+    <h1>Naruto: Shippuden Characters</h1>
+</header>
+<nav class="menu">
+    <ul>
+        <li><a href="https://naruto.fandom.com/wiki/Naruto_Uzumaki">Naruto Uzumaki</a></li>
+        <li><a href="https://naruto.fandom.com/wiki/Sasuke_Uchiha">Sasuke Uchiha</a></li>
+        <li><a href="https://naruto.fandom.com/wiki/Sakura_Haruno">Sakura Haruno</a></li>
+        <li><a href="https://naruto.fandom.com/wiki/Kakashi_Hatake">Kakashi Hatake</a></li>
+        <li><a href="https://naruto.fandom.com/wiki/Itachi_Uchiha">Itachi Uchiha</a></li>
+
+    </ul>
+</nav>
+<article class="content">
+    <section>
+        <a href="https://naruto.fandom.com/wiki/Naruto_Uzumaki">
+        <img src="media/naruto.png" alt="Naruto">
+        <h2>Naruto Uzumaki</h2></a>
+    </section>
+    <section>
+        <a href="https://naruto.fandom.com/wiki/Sasuke_Uchiha">
+        <img src="media/sasuke.png" alt="Sasuke">
+        <h2>Sasuke Uchiha</h2></a>
+    </section>
+    <section>
+        <a href="https://naruto.fandom.com/wiki/Sakura_Haruno">
+        <img src="media/sakura.png" alt="Sakura">
+        <h2>Sakura Haruno</h2></a>
+    </section>
+    <section style="padding-right: 20px;">
+        <a href="https://naruto.fandom.com/wiki/Kakashi_Hatake">
+        <img src="media/kakashi.png" alt="Kakashi">
+        <h2>Kakashi Hatake</h2></a>
+    </section>
+    <section>
+        <a href="https://naruto.fandom.com/wiki/Itachi_Uchiha">
+        <img src="media/itachi.png" alt="Itachi">
+        <h2>Itachi Uchiha</h2></a>
+    </section>
+</article>
+<br>
+<aside class="left"><h3><i>The Story:</i></h3>
+    <p>   Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, 
+    a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village. 
+    The story is told in two parts.. the first set in Naruto's pre-teen years, and the second in his teens. The series is based on 
+    two one-shot manga by Kishimoto: Karakuri (1995), 
+    which earned Kishimoto an honorable mention in Shueisha's monthly Hop Step Award the following year, and Naruto (1997). 
+    <a href="https://en.wikipedia.org/wiki/Naruto"> - Wikipedia Source</a></p>
+
+    <button onclick="myFunction()">Click here to tell me your favorite character!</button>
+    
+    <script>
+    function myFunction() {
+        var fav = new String();
+        fav = prompt("Who is your favorite Naruto character?")
+        document.getElementById("fav").innerHTML = alert("Hey! " + fav + " is my favorite too!");
+    }
+    </script>
+    
+    <p style="font-size: 12px;">I hope you've enjoyed!<br>
+        &copy; Scott Wesenberg 11/2022<br>
+        wesenbs@mail.nmc.edu<br>
+        <i>"SASUKEEEE!!!"</i> -Naruto Uzumaki</p>
+        <ul style="font-size: 12px;">
+            <li><a href="css/index.css">css</a></li>
+            <li><a href="css/print.css">print</a></li>
+        </ul>
+</aside>
+<footer class="foot">
+    <div class="icon-bar">
+        <p>
+        <a href="https://open.spotify.com/album/6NrJzDuBPZvp3ZRXnIqs1P?si=D8blFoMYQ0yJIDk7zXv8kA"><i class="fa fa-spotify"></i></a>
+        <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=nartuo+collectibles&_sacat=2536&LH_TitleDesc=0&_osacat=2536&_odkw=naruto+ccg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/watch?v=CNWI9lJZ7aw"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.instagram.com/naruto/?hl=en"><i class="fa fa-instagram"></i></a></p>
+    </div>
+</footer>
+</body>
+</html>
